@@ -1,0 +1,50 @@
+.page {
+    text-align: center;
+    background-color: gainsboro;
+    margin-block-start: auto;
+    padding: 10px 20px 10px 20px;
+}
+
+.display {
+    text-align: left;
+    background-color: lavender;
+    margin-block-start: auto;
+    padding: 10px 20px 10px 20px;
+}
+
+textarea {
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    padding: 70px 0;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+textarea:focus {
+    background-color:aliceblue;
+}
+
+.view {
+    text-align: right;
+}
+
+table {
+    width: 500px;
+}
+
+thead {
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: aliceblue;
+}
+

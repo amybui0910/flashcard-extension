@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Flashcard Extension",
+    "description": "Chrome extension where users can create their own flashcards and the chrome extension will periodically prompt the user to review the concepts on the flashcard.",
+    "version": "1.0",
+    "permissions": ["alarms", "storage", "tabs"],
+    "action": {
+      "default_popup": "flashcard.html",
+      "default_icon": "images/flashcard_logo.png"
+    }, 
+    "background": {
+        "service_worker": "background.js"
+    }
+  }
