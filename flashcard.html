@@ -11,19 +11,23 @@
                 Create a new flashcard
             </h3>
             <form id="new-card-form">
-                <textarea name="front" id="front-card" autofocus type="text" placeholder="Front" rows="4"></textarea>
-                <textarea name="back" id="back-card" type="text" placeholder="Back" row="4"></textarea>
+                <textarea name="front" id="front-card" autofocus required placeholder="Front" wrap="soft" rows="6" cols="40"></textarea>
+                <textarea name="back" id="back-card" required placeholder="Back" wrap="soft" rows="6" cols="40"></textarea>
                 <input id="create" type="submit" value="Create">
             </form>
         </div>
-        <button class="view" id="view">View flashcards</button>
-        <select id="timer">
-            <option id="off">Off</option>
-            <option id="1">1 minute</option>
-            <option id="5">5 minutes</option>
-            <option id="10">10 minutes</option>
-            <option id="20">20 minutes</option>
-        </select>
+        <div class="footer">
+            <p>Reminder: Disable popup-blockers</p>
+            <select id="timer">
+                <option id="default" selected disabled hidden></option>
+                <option id="off">Off</option>
+                <option id="2">2 minutes</option>
+                <option id="5">5 minutes</option>
+                <option id="10">10 minutes</option>
+                <option id="20">20 minutes</option>
+            </select>
+            <button id="view">View flashcards</button>
+        <div>
     </body>
     <script src="flashcard.js"></script>
 </html>

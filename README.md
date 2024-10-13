@@ -1,9 +1,8 @@
-# cs50_final_project
 # Flashcard chrome extension 
 #### Video Demo: https://youtu.be/OndbzlF2u1A
 #### Description: 
 
-This project is intended to be submitted for the Harvard cs50 2024 online course. Uses the following resources
+This project was intended to be submitted for the Harvard cs50 2024 online course. Used the following resources
 to help implement the code: 
 - https://youtube.com/playlist?list=PLVrGZCP4x3PRHKbq-gDrSygGHbU4X9pTR&si=1LQjCtmzpbNiVqyK
 - cs50.ai
@@ -55,7 +54,6 @@ flashcard_logo.png - extension icon. Created in Canva.
 Future implementations that would greatly improve the extension
 - Automatic closing of popup window (would greatly reduce memory usage)
 - More appealing style choices and customization for styles
-- Text input for the front and back of cards to not be single line text boxes (means changing input to textarea and changing the implementation of flashcards.js and flashcards.html)
 - Animation of a card flipping when flip is clicked
 - The ability to continue going through flashcards in the popup window
-- The displayed timer option stays the same after the user closes the extension window instead of resetting to off each time despite no changes to the alarm
+- Timer until next card appears

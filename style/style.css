@@ -12,28 +12,25 @@
     padding: 10px 20px 10px 20px;
 }
 
-textarea {
-    align-items: center;
-    width: 250px;
-    height: 150px;
-    padding: 70px 0;
+.footer {
     text-align: center;
-    box-sizing: border-box;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+
+textarea {
+    padding: 10px;
+    text-align: center;
+    resize: none;
+    border: none; 
 }
 
 textarea:focus {
     background-color:aliceblue;
-}
-
-.view {
-    text-align: right;
+    border: none; 
 }
 
 table {
     width: 500px;
+    background-color: white;
 }
 
 thead {
@@ -47,4 +44,3 @@ th, td {
 tr:hover {
     background-color: aliceblue;
 }
-

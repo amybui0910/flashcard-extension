@@ -11,9 +11,16 @@ const back_card = document.getElementById("back-card");
 
 const name = "flashcards";
 
-// check if flashcards exist
+// check if flashcards exist, create if not
 if (!localStorage.getItem(name)) {
     localStorage.setItem(name, JSON.stringify([]));
+}
+
+// change default timer option
+if (!localStorage.getItem('timer')) {
+    document.querySelector('#default').innerHTML = 'Set timer';
+} else {
+    document.querySelector('#default').innerHTML = localStorage.getItem('timer');
 }
 
 // Create a card
@@ -48,6 +55,7 @@ timers.addEventListener('change', function() {
     } else {
         chrome.alarms.create("popupAlarm", {
             periodInMinutes: parseInt(timers.value) // set timer
-        })
+        });
     }
+    localStorage.setItem('timer', timers.value);
 })
